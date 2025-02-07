@@ -1,0 +1,432 @@
+@import url("https://db.onlinewebfonts.com/c/07a38bbad54db72a40b406bed1c72f53?family=Gotham+Pro+Regular");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background-color: #fff;
+}
+
+.home_container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.home_main_image {
+    background-image: url("../../image/home_main_image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.home_main_image::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #00504D66;
+    top: 0;
+    left: 0;
+}
+
+/* title */
+.large_title {
+    font-family: "Inter";
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 84.72px;
+    text-align: center;
+    color: #fff;
+    margin: 72px 180px 0 180px;
+    z-index: 1;
+    position: relative;
+}
+.medium_title {
+    font-family: "Inter";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60.51px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 10px 0;
+} 
+.title_large_black {
+    font-family: "Gotham Pro Regular";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 57.42px;
+    text-align: center;
+}
+.title_medium_black {
+    font-family: "Gotham Pro Regular";
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 28.71px;
+    text-align: left;
+    margin: 0 0 30px 0;
+}
+.title {
+    font-family: "Gotham Pro Regular";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 28.71px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.title_medium_white {
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.41px;
+    text-align: center;
+    color: #fff;
+}
+.product_desk {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    color: #7E7E7E;
+}
+.desk {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+    color: #7E7E7E;
+    margin: 8px 0 20px 0;
+}
+/*  */
+.home_main_btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.btn {
+    width: 200px;
+    height: 80px;
+    background-color: #00AC73;
+    border-radius: 15px;
+    border: none;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: center;
+    color: #fff;
+}
+
+.home_products {
+    margin-top: 100px;
+}
+
+.home_products_container {
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 24px;
+    padding: 50px 0 50px 0;
+}
+
+.home_products_items_cont {
+    background-color: #7E7E7E1A;
+}
+
+.home_products_item {
+    height: 400px;
+    width: 240px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 24px 0 24px;
+}
+
+.product_title {
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    color: #00AC73;
+}
+
+.home_popular_products_item_cont {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 24px;
+    padding: 50px 0 50px 0;
+}
+
+.home_products_item.shadow {
+    box-shadow: 0px 0px 20px 0px #0000001F;
+}
+
+.home_aboutUs_container {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.home_aboutUs_image {
+    width: 60%;
+    height: 590px;
+}
+
+
+.image_box {
+    height: 525px;
+    width: 525px;
+    border-radius: 15px;
+    background-color: #00504D;
+    position: relative;
+}
+
+.home_aboutUs_text {
+    width: 47%;
+    border: 1px solid #000;
+}
+
+.home_aboutUs_box {
+    max-width: 1300px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00504D;
+    border-radius: 15px;
+}
+
+.home_aboutUs_image img{
+    border-radius: 15px;
+    transform: translate(100px, -420px);
+}
+
+.home_aboutUs_box .text {
+    margin: 0 20px;
+}
+/* ================= responsiv style =========== */
+
+@media(max-width: 1300px) {
+    .home_main_image {
+        margin: 0 10px;
+    }
+    .home_products_container {
+        margin: 0 10px;
+    }
+    .home_popular_products {
+        margin: 0 10px;
+    }
+    .home_aboutUs {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .image_box {
+        height: 500px;
+        width: 500px;
+    }
+
+    .home_aboutUs_image img {
+        height: 500px;
+        width: 500px;
+        transform: translate(70px, -425px);
+    }
+    .title_medium_black {
+        font-size: 25px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .desk {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .image_box {
+        height: 470px;
+        width: 470px;
+    }
+
+    .home_aboutUs_image img {
+        height: 470px;
+        width: 470px;
+        transform: translate(70px, -425px);
+    }
+    .title_medium_black {
+        font-size: 25px;
+    }
+    .title {
+        font-size: 25px;
+        margin: 5px 0;
+    }
+    .desk {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .large_title {
+        font-size: 60px;
+        margin: 72px 150px 0 150px;
+        line-height: 75px;
+    }
+    .home_products_container {
+        margin: 50px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home_container {
+        padding-top: 50px;
+    }
+    .large_title {
+        font-size: 60px;
+        margin: 72px 150px 20px 150px;
+        line-height: 70px;
+    }
+    .medium_title {
+        margin: 0px 40px 0 40px;
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 850px) {
+    .large_title {
+        font-size: 50px;
+        margin: 72px 140px 20px 140px;
+        line-height: 60px;
+    }
+    .medium_title {
+        margin: 0px 90px 0 90px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 750px) {
+    .home_main_image {
+        border-radius: 30px;
+        height: 470px;
+    }
+    .large_title {
+        font-size: 50px;
+        margin: 72px 90px 20px 90px;
+        line-height: 50px;
+    }
+    .medium_title {
+        margin: 40px 100px 0 100px;
+        font-size: 40px;
+    }
+    .home_products_item {
+        width: 225px;
+    }
+}
+
+@media (max-width: 650px) {
+    .home_main_image {
+        border-radius: 30px;
+        height: 450px;
+    }
+    .large_title {
+        font-size: 50px;
+        margin: 72px 40px 20px 40px;
+        line-height: 50px;
+    }
+    .medium_title {
+        margin: 40px 30px 0 30px;
+        font-size: 40px;
+    }
+    .btn {
+        height: 76px;
+    }
+    .home_products_item {
+        width: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .home_main_image {
+        border-radius: 30px;
+        height: 390px;
+    }
+    .large_title {
+        font-size: 45px;
+        margin: 52px 10px 20px 10px;
+        line-height: 45px;
+    }
+    .medium_title {
+        margin: 40px 20px 0 20px;
+        font-size: 33px;
+        line-height: 35px;
+    }
+    .btn {
+        height: 60px;
+    }
+    .home_products_container {
+        margin: 50px 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home_main_image {
+        border-radius: 30px;
+        height: 300px;
+    }
+    .large_title {
+        font-size: 40px;
+        margin: 25px 10px 20px 10px;
+        line-height: 40px;
+    }
+    .medium_title {
+        margin: 10px 30px 0 30px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .btn {
+        height: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    .home_main_image {
+        border-radius: 30px;
+        height: 300px;
+    }
+    .large_title {
+        font-size: 35px;
+        margin: 25px 10px 20px 10px;
+        line-height: 40px;
+    }
+    .medium_title {
+        margin: 10px 30px 0 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .btn {
+        height: 60px;
+    }
+    .home_products_container {
+        margin: 50px 20px;
+    }
+}
