@@ -202,7 +202,6 @@ body {
 
 .home_aboutUs_text {
     width: 47%;
-    border: 1px solid #000;
 }
 
 .home_aboutUs_box {
@@ -213,6 +212,7 @@ body {
     justify-content: space-between;
     background-color: #00504D;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .home_aboutUs_image img{
@@ -245,7 +245,6 @@ body {
         height: 500px;
         width: 500px;
     }
-
     .home_aboutUs_image img {
         height: 500px;
         width: 500px;
@@ -264,28 +263,38 @@ body {
 
 @media (max-width: 1100px) {
     .image_box {
-        height: 470px;
-        width: 470px;
+        height: 450px;
+        width: 450px;
     }
 
     .home_aboutUs_image img {
-        height: 470px;
-        width: 470px;
-        transform: translate(70px, -425px);
+        height: 450px;
+        width: 450px;
+        transform: translate(70px, -395px);
     }
     .title_medium_black {
-        font-size: 25px;
+        font-size: 23px;
     }
     .title {
-        font-size: 25px;
+        font-size: 23px;
         margin: 5px 0;
     }
     .desk {
         font-size: 18px;
+        margin: 0;
     }
 }
 
 @media (max-width: 1000px) {
+    .home_aboutUs_image img {
+        height: 420px;
+        width: 420px;
+        transform: translate(70px, -355px);
+    }
+    .image_box {
+        height: 420px;
+        width: 420px;
+    }
     .large_title {
         font-size: 60px;
         margin: 72px 150px 0 150px;
@@ -293,6 +302,20 @@ body {
     }
     .home_products_container {
         margin: 50px 40px;
+    }
+    .title_medium_black {
+        font-size: 21px;
+    }
+    .title_medium_white {
+        font-size: 35px;
+    }
+    .title {
+        font-size: 21px;
+        margin: 5px 0;
+    }
+    .desk {
+        font-size: 17px;
+        margin: 0;
     }
 }
 
@@ -305,9 +328,37 @@ body {
         margin: 72px 150px 20px 150px;
         line-height: 70px;
     }
+    .home_aboutUs_box {
+        display: flex;
+        flex-direction: column;
+    }
     .medium_title {
         margin: 0px 40px 0 40px;
         font-size: 45px;
+    }
+    .home_aboutUs_image img {
+        height: 390px;
+        width: 390px;
+        transform: translate(70px, -355px);
+    }
+    .image_box {
+        height: 390px;
+        width: 390px;
+    }
+    .title_medium_white {
+        font-size: 40px;
+    }
+    .title_medium_black {
+        font-size: 19px;
+        margin: 0 0 10px 0;
+    }
+    .title {
+        font-size: 19px;
+        margin: 3px 0;
+    }
+    .desk {
+        font-size: 16px;
+        margin: 0;
     }
 }
 
@@ -321,6 +372,38 @@ body {
         margin: 0px 90px 0 90px;
         font-size: 40px;
         line-height: 50px;
+    }
+    .home_aboutUs_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home_aboutUs_image {
+        width: 100%;
+    }
+    .image_box {
+        height: 525px;
+        width: 525px;
+    }
+    .home_aboutUs_image img {
+        height: 525px;
+        width: 525px;
+        transform: translate(70px, -425px);
+    }
+    .home_aboutUs_text {
+        margin-top: 100px;
+        width: 100%;
+    }
+    .title_medium_black {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .title {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .desk {
+        font-size: 25px;
     }
 }
 
@@ -340,6 +423,10 @@ body {
     }
     .home_products_item {
         width: 225px;
+    }
+    .home_aboutUs_text {
+        margin-top: 100px;
+        width: 100%;
     }
 }
 
@@ -362,6 +449,19 @@ body {
     }
     .home_products_item {
         width: 400px;
+    }
+    .image_box {
+        height: 480px;
+        width: 480px;
+    }
+    .home_aboutUs_image img {
+        height: 480px;
+        width: 480px;
+        transform: translate(50px, -420px);
+    }
+    .home_aboutUs_text {
+        margin-top: 0px;
+        width: 100%;
     }
 }
 
@@ -386,12 +486,45 @@ body {
     .home_products_container {
         margin: 50px 30px;
     }
+    .image_box {
+        height: 420px;
+        width: 420px;
+    }
+    .home_aboutUs_image img {
+        height: 420px;
+        width: 420px;
+        transform: translate(30px, -380px);
+    }
+    .home_aboutUs_text {
+        margin-top: -50px;
+        width: 100%;
+    }
+    .title_medium_black {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .title {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .desk {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 500px) {
     .home_main_image {
         border-radius: 30px;
         height: 300px;
+    }
+    .image_box {
+        height: 400px;
+        width: 400px;
+    }
+    .home_aboutUs_image img {
+        height: 400px;
+        width: 400px;
+        transform: translate(30px, -365px);
     }
     .large_title {
         font-size: 40px;
@@ -406,12 +539,62 @@ body {
     .btn {
         height: 60px;
     }
+    .title_medium_white {
+        font-size: 35px;
+    }
+    .home_aboutUs_text {
+        margin-top: -90px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .image_box {
+        height: 360px;
+        width: 360px;
+    }
+    .home_aboutUs_image img {
+        height: 360px;
+        width: 350px;
+        transform: translate(25px, -330px);
+    }
+    .home_aboutUs_text {
+        margin-top: -150px;
+        width: 100%;
+    }
+    .title_medium_white {
+        font-size: 25px;
+        line-height: 35px;
+    } 
+    .title_medium_black {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .title {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+    .desk {
+        font-size: 19px;
+    }
+    .home_aboutUs_box {
+        margin-top: -20px;
+    }
 }
 
 @media (max-width: 400px) {
     .home_main_image {
         border-radius: 30px;
         height: 300px;
+    }
+    .image_box {
+        height: 320px;
+        width: 320px;
+    }
+    .home_aboutUs_image img {
+        height: 320px;
+        width: 320px;
+        transform: translate(25px, -300px);
     }
     .large_title {
         font-size: 35px;
@@ -428,5 +611,9 @@ body {
     }
     .home_products_container {
         margin: 50px 20px;
+    }
+    .home_aboutUs_text {
+        margin-top: -220px;
+        width: 100%;
     }
 }
